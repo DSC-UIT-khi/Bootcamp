@@ -51,6 +51,7 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
 }
 
 .container {
@@ -71,7 +72,7 @@ body {
   border-left-width: 0px;
   border-bottom-width: 3px; */
   background-color: grey;
-  height: 1000px;
+  /* height: 1000px; */
   /* display: none; */
   /* gap: 20px; */
   /* flex-direction: column; */

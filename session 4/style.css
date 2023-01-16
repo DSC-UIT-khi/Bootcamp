@@ -1,0 +1,50 @@
+body {
+  background-color: grey;
+}
+
+.parent-elem {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: yellow;
+  height: 200px;
+  width: 400px;
+  /* animation */
+  /* animation: animation-name duration-of-the-animation number-of-times */
+  animation: slide-left 2s linear;
+  /* animation-name: slide-left; */
+  /* animation-duration: 2s; */
+  /* animation-direction: ; */
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    transform: translate(100%, 100%);
+  }
+
+  75% {
+    transform: translate(100%, 100%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* @media (max-width: 768px) and (min-width: 400px) {
+  .container {
+    background-color: purple;
+  }
+} */
+
+.container-2 {
+  background-color: aqua;
+  width: 400px;
+  height: 200px;
+}
