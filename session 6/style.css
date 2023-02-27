@@ -1,0 +1,48 @@
+body {
+  /* background: aqua; */
+  /* background-color: aqua; */
+  background: linear-gradient(180deg, #ffc5d6 0%, #bcc3ff 100%) no-repeat;
+  /* px rem em vw vh % */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-heading {
+  color: red;
+  /* font-family: "Nunito", sans-serif; */
+  font-weight: 900;
+  text-decoration: underline dotted;
+  /* letter-spacing: 5px; */
+  word-spacing: 50px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.main-heading:hover {
+  color: green;
+}
+
+.main-heading:active {
+  color: purple;
+}
+
+h1 {
+  color: red;
+  /* font-family: "Nunito", sans-serif; */
+  font-weight: 900;
+  text-decoration: underline dotted;
+  /* letter-spacing: 5px; */
+  word-spacing: 50px;
+  line-height: 100px;
+  text-shadow: 10px 10px 10px purple;
+}
+
+ul {
+  list-style-type: square;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+li {
+  color: red;
+}
