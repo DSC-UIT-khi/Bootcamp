@@ -1,0 +1,50 @@
+/* body {
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+} */
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+}
+
+.container:hover {
+  background: red;
+}
+
+.container:active {
+  background: purple;
+} */
+/* .container > div:first-child {
+  background: yellow;
+  color: red;
+  height: 100px;
+  width: 100px;
+} */
