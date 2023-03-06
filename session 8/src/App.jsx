@@ -1,10 +1,19 @@
-import logo from "./logo.svg";
+// React
+import { useState } from "react";
+
+// Styles
 import "./App.css";
 
+// Components
+import Counter from "./components/Counter";
+import Todo from "./components/Todo";
+
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
     <div className="App">
-      <p>Hello world!</p>
+      {/* <Counter counter={counter} setCounter={setCounter} incrementVal={11} /> */}
+      <Todo />
     </div>
   );
 }
