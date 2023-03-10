@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.side-bar{
+    width: 15rem;
+    background-color: #f5f5f6;
+    height: fit-content;
+    flex-shrink: 0;
+    position: fixed;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.2s;
+    z-index: 99;
+}
+.side-bar::-webkit-scrollbar {
+    display: none;
+}
+.side-bar__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+    background-color: #f5f5f6;
+}
+.side-bar__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.side-bar__header__title h1{
+    font-size: 3vh;
+    font-weight: 500;
+}
+.side-bar__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin: 1rem 1.5rem 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    padding-bottom: 1.5rem;
+
+}
+.side-bar__container__content{
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    padding: 1.25rem;
+}
+.side-bar__container__content p{
+    text-align: left;
+    font-size: 13px;
+    padding: 0.4rem 0;
+    line-height: 1.2rem;
+}
+.btn{
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.125em;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    text-decoration: none;
+    word-break: break-word;
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 1;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 0%);
+    transition: all .3s ease-in-out;
+}
+.btn-green{
+    background-color: #09c478;
+}
+.side-bar__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:left;
+}
+.side-bar__menu ul{
+    list-style: none;
+    margin: 0rem 1.2rem;
+}
+.side-bar__menu ul li{
+    cursor: pointer;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: color linear 0.2s;
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+}
+.side-bar__menu ul li:hover{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+}
+#cat:hover{
+    cursor: text;
+    background-color: transparent!important;
+    border-radius: none!important;
+
+}
+.theme__switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    padding-top: 1.5em;
+    margin: 0rem 1.2rem;
+    font-size: 0.875rem;
+}
+footer p{
+    margin-top: 0;
+    line-height: 1.4rem;
+    font-size: 13px;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1em 2rem 1rem 17rem;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__btn__container a{
+    margin: 0px 7px;
+}
+.nav__container form input{
+    border: none;
+    border-radius: 0.5rem;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color: inherit;
+    display: block;
+    flex: 1;
+    width: 450px;
+    height: 1.5rem;
+    padding: 1rem 2.5rem;
+    background-color: #f5f5f6;
+
+}
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+}
+#search-icon{
+    position: absolute;
+    top:1.7pc;
+    padding-left:9px;
+    font-size: 11px;
+}
+.featured__container{
+    padding: 1em 2rem 1rem 16rem;
+    margin-bottom: 10rem;
+}
+.featured__container h2{
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0.5em 0 0em 1em;
+}
+.featured__container__content{
+    padding: 0.5em 0em 1.5em 1.2em;
+}
+.featured__card__header{
+    padding: 0.5rem 0;
+}
+.featured__card__header h1{
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+.featured__card__header h3{
+    font-weight: 400;
+    font-size: .8125rem;
+    color: #888;
+}
+
+.featuerd__card__body img{
+    width: 350px;
+    aspect-ratio: auto 300 / 300;
+    height: 250px;
+    border-radius: 7px;
+    position: absolute;
+    object-fit: cover;
+}
+section{
+    height:60vh;
+}
+.feartured__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 17rem;
+    grid-column-gap: 10rem;
+    padding: 0.5rem 0;
+}
+.album__container{
+    padding: 3.5em 2rem 1rem 16rem;
+}
+.album__container h2{
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0.5em 0 0em 1em;
+}
+.album__card{
+    width: 100%;
+}
+.album__container__content{
+    padding: 0.5em 0em 1.5em 1.2em;
+}
+.album__card__footer{
+    padding: 1rem 0;
+}
+.album__card__footer h1{
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+.album__card__footer h3{
+    font-weight: 400;
+    font-size: .8125rem;
+    color: #888;
+}
+
+.album__card__body img{
+    width: 220px;
+    aspect-ratio: auto 300 / 300;
+    height: 200px;
+    border-radius: 7px;
+    position: absolute;
+    object-fit: cover;
+}
+.album__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0rem;
+    padding: 0.5rem 0;
+}
+
+.recommendation_container{
+    padding: 1em 2rem 1rem 16rem;
+    margin-bottom: 10rem;
+}
+.recommendation_container h1{
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0.5em 0 0em 1em;
+}
+.tracks{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1.2em;
+}
+
+.track{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.track__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.track__info img{
+    width: 50px;
+    height: 50px;
+    border-radius:8px;
+    margin-right: 1rem;
+}
+.track__info h3{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #888;
+}
+.track__info h4{
+    font-weight: 400;
+    font-size: 1.05rem;
+}

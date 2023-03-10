@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/ecb9dd11b4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="side-bar">
+        <div class="side-bar__header">
+            <div class="side-bar__content">
+                <div class="side-bar__header__logo">
+                    <i class="fa-solid fa-compact-disc" style="margin-right: 4px; color: green;"></i>
+                                </div>
+                <div class="side-bar__header__title">
+                    <h1>Musicon</h1>
+                </div>
+            </div>
+            <div class="side-bar__close">
+                <i class="fa-solid fa-bars" style="color: green;"></i>
+            </div>
+        </div>
+        <div class="side-bar__container">
+            <div class="side-bar__container__content">
+                <p>
+                    <strong>Subscribe Now</strong>
+                </p>
+                <p>
+                    Follow your favorite artists and create unlimited playlists.
+                </p>
+            </div>
+            <a class="btn btn-green" href="http://music.flatfull.com/musicon/login?action=register" style="border-radius:8px" data-pjax-state="">Sign up Free</a>
+        </div>
+        <div class="side-bar__menu">
+            <ul>
+                <li><a href="#">Discover</li>
+                <li><a href="#">Browse</a></li>
+                <li style="opacity: 0.5;
+                font-size: 0.7em!important;" id="cat">My Collection</li>
+                <li style="font-size: 0.9em;"><a href="#"><i class="fa-regular fa-heart" style="margin-right: 7px; color: green;"></i>Likes</a></li>
+                <li style="font-size: 0.9em;"><a href="#"><i class="fa-solid fa-compact-disc" style="margin-right: 7px; color: green;"></i>Tracks</a></li>
+                <li style="font-size: 0.9em;"><i class="fa-regular fa-circle-play" style="margin-right: 7px; color: green;"></i>Playlist</a></li>
+                <li style="opacity: 0.5;
+                font-size: 0.7em!important;" id="cat">Settings</li>
+                <li><a href="#" style="font-size: 0.9em;"><i class="fa-solid fa-circle" style="margin-right: 7px; color: green;"></i>Primary Color</a></li>
+                <li>
+                    <div class="theme__switch">
+                        <i class="fa-solid fa-toggle-off" style="margin-right: 7px; font-size: 1.7em;"></i>
+                        <a href="#" style="font-size: 0.9em;">Dark Theme</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <p><a>Blog</a> <a>Pricing Plans</a> <a>Privacy</a> <a>Terms</a></p>
+            
+            
+            
+            <p style="color:#888888;font-size:12px">@2022 Music Theme</p>
+            
+            
+            
+            <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+            
+            
+            
+            <p></p>
+            </footer>
+    </div>
+    <div class="nav-bar">
+        <div class="nav__container">
+            <form action="/">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <input type="text" placeholder="Search...">
+            </form>
+            <div class="nav__btn__container">
+                <a href="#">Login</a>
+                <a href="#" class="btn btn-green">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <!-- Section  -->
+    <section>
+        <div class="featured__container">
+            <h2>Featured</h2>
+            <div class="featured__container__content">
+                <div class="feartured__grid">
+                    <div class="featured__card">
+                        <div class="featured__card__header">
+                            <h1>After Hours</h1>
+                            <h3>The Weeknd</h3>
+                        </div>
+                        <div class="featuerd__card__body">
+                            <img src="https://s3.amazonaws.com/media.thecrimson.com/photos/2020/04/02/211518_1343746.jpg" alt="The Weeknd">
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card__header">
+                            <h1>Die For You</h1>
+                            <h3>Joji</h3>
+                        </div>
+                        <div class="featuerd__card__body">
+                            <img src="data:image/jpeg;base64,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" alt="The Weeknd">
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card__header">
+                            <h1>Mangolia</h1>
+                            <h3>Playboy Carti</h3>
+                        </div>
+                        <div class="featuerd__card__body">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Playboi_Carti_%28cropped%29.jpg" alt="The Weeknd">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+    </section>
+</body>
+</html>
