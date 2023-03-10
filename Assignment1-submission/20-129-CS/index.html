@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cute Cat Contest</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+      }
+      h1 {
+        font-size: 36px;
+        margin-top: 50px;
+        color: #fff;
+      }
+      .cat-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .cat-card {
+        width: 50%;
+        text-align: center;
+        padding: 30px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px lightgray;
+        margin: 0 10px;
+        transition: all 0.2s ease-in-out;
+      }
+      .cat-card:hover {
+        transform: scale(1.001);
+        box-shadow: 0px 0px 20px lightgray;
+        cursor: pointer;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+        color: #fff;
+      }
+      img {
+        width:350px;
+        height:350px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    </style>
+    <script>
+      function fetchCat(imgElement) {
+        imgElement.src =
+          "https://thecatapi.com/api/images/get?format=src&type=gif&image_id=" +
+          Math.floor(Math.random() * (100 - 80 + 1) + 80);;
+      }
+
+      function redirect() {
+        window.location.href = atob("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXw0dzlXZ1hjUQ==");
+      }
+
+      window.onload = function () {
+        fetchCat(document.getElementById("cat1"));
+        fetchCat(document.getElementById("cat2"));
+      };
+    </script>
+  </head>
+  <body>
+      <h1>Which cat is cuter?</h1>
+    <div class="cat-container">
+      <div class="cat-card" onclick="redirect()">
+        <h2>Cat 1</h2>
+        <img id="cat1" onerror="fetchCat(this)" />
+      </div>
+      <div class="cat-card" onclick="redirect()">
+        <h2>Cat 2</h2>
+        <img id="cat2" onerror="fetchCat(this)" />
+      </div>
+    </div>
+  </body>
+</html>
