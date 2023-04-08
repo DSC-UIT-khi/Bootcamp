@@ -95,8 +95,8 @@ function App() {
           </li>
         ))}
       </ul> */}
-      {/* <Counter counter={counter} setCounter={setCounter} incrementVal={11} /> */}
-      {/* <Todo /> */}
+      <Counter counter={counter} setCounter={setCounter} incrementVal={11} />
+      <Todo />
     </div>
   );
 }
